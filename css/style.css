@@ -8772,7 +8772,8 @@ padding: 1em 0em 0em 0em;
   list-style: none;
   margin: 0 0 20px 0;
   position: relative;
-  padding-left: 40px;
+  padding-left: 140px;
+  
 }
 .contact-info li i {
   position: absolute;
@@ -8781,6 +8782,7 @@ padding: 1em 0em 0em 0em;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
 }
+
 .contact-info li a {
   font-weight: 400 !important;
   color: rgba(0, 0, 0, 0.3);
@@ -8946,7 +8948,8 @@ input[type="text"] {
 .fh5co-table,
 .fh5co-table-cell,
 .fh5co-parallax {
-  height: 600px;
+  height: 500px;
+
   /*height: 400px;*/
 }
 
