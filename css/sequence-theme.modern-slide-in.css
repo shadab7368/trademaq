@@ -343,7 +343,7 @@
 
   .seq .seq-title {
     bottom: 0;
-    width: 40%;
+    width: 50%;
     margin-right: 12.5%;
   }
 
@@ -363,9 +363,10 @@
 
   .seq .seq-title h2 {
     margin-bottom: .4em;
-    padding: .2em .6em;
-	color: rgb(101, 188, 228);
-	background: #227f92;
+    font-weight: bold;
+    padding: .4em .12em;
+	color: rgb(2, 16, 60);
+	background: #c4c4c477;
     /*
 	color: white;
     background: black;
@@ -376,11 +377,13 @@
   }
 
   .seq .seq-title h3 {
-    display: block;
+    display: block; 
 
     -webkit-transform: translate3d(120px, 0, 0);
     -ms-transform: translate3d(120px, 0, 0);
     transform: translate3d(120px, 0, 0);
+    font-size: large;
+    color: #1a0dad;
   }
 
   .seq .seq-in {
