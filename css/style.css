@@ -1426,11 +1426,11 @@ textarea {
 }
 
 a {
-  color: #091e3e;
+  color: #0a244d;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #091e3e;
+  color: #114d00;
   text-decoration: underline;
 }
 a:focus {
@@ -1656,7 +1656,13 @@ mark,
 }
 
 .text-primary {
-  color: #091e3e;
+  color: #2d61af;
+}
+.text-heading{
+  color: rgb(170 0 0 );
+}
+.text-bold{
+  font-weight: bold;
 }
 
 a.text-primary:hover,
@@ -1674,7 +1680,8 @@ a.text-success:focus {
 }
 
 .text-info {
-  color: #31708f;
+  /* color: #31708f; */
+  color: rgb(170 0 0);
 }
 
 a.text-info:hover,
@@ -7391,7 +7398,7 @@ a {
 }
 a:hover {
   text-decoration: none !important;
-  color: #091e3e !important;
+  color: rgb(172 0 0) !important;
 }
 
 p, ul, ol {
