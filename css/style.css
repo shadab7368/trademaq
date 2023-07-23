@@ -1656,10 +1656,14 @@ mark,
 }
 
 .text-primary {
-  color: #2d61af;
+  color: #051329;
+  
+  /* font-family:Arial, Helvetica, sans-serif */
 }
 .text-heading{
-  color: rgb(170 0 0 );
+  color: #051329;
+  
+  /* font-family: Arial, Helvetica, sans-serif */
 }
 .text-bold{
   font-weight: bold;
@@ -6003,6 +6007,10 @@ button.list-group-item-danger.active:focus {
 
 .panel-body {
   padding: 15px;
+  
+}
+.panel-body p{
+font-size: medium;
 }
 .panel-body:before, .panel-body:after {
   content: " ";
@@ -8911,11 +8919,13 @@ input[type="text"] {
 }
 
 .fh5co-bg-color {
-  background: #e6e6e6;
+  /* background: #e6e6e6; */
+  background-color: #ffffff;
 }
 
 .fh5co-bg-color2 {
   background: #262626;
+  background-color: #000;
 }
 
 .section-title {
