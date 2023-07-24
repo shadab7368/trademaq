@@ -51,11 +51,150 @@
 	<!-- Dropdown Menu -->
 	<link rel="stylesheet" href="css/superfish.css">
 	<!-- Owl Slider -->
-	<!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
+	<!-- <link rel="stylesheet" href="owl-carousel/owl.carousel.css"> -->
 	<!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
 	<!-- Date Picker -->
+
+
+<style>
+  /*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+  padding-top: 70px; 
+  position: relative;
+    height: 50vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 50vh;
+}
+.fade-carousel .carousel-indicators > li {
+
+  margin: 2px;
+    background-color: #7312f3;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+  /* padding-top: 150px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #141414;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(30, 30, 30, 0.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 00%;
+    z-index: 2;
+    background-color: #1d61ce;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #3b15f7;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+   
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(/trademaq/images/slider/slide1.jpg)
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(/trademaq/images/slider/slide2.jpg);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(/trademaq/images/slider/slide3.jpg);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+</style>
+</head>
+
+
 	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
-    
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- CS Select -->
 	<link rel="stylesheet" href="css/cs-select.css">
@@ -429,185 +568,59 @@
 <!-- slider -->
 
 
+<div class="gap40"></div>
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="10000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>School Uniform</h1>        
+            <h3 class="text-info">School Uniform
+              We provide designing and manufacturing services in all kinds of schoolwear and school uniforms</h3>
+        </hgroup>
+        <!-- <button class="btn btn-hero" role="button">See all features</button> -->
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Corporate Uniform</h1>        
+            <h3 class="text-info">MAQ MHA Trading Company are very proud of providing different services including designing, manufacturing and supplying in all varieties of corporate,company weart</h3>
+        </hgroup>       
+        <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Aviation Uniform</h1>        
+            <h3 class="text-info">MAQ MHA Trading Company Uniforms is a pioneer of Aviation uniform across Saudi Arabia</h3>
+        </hgroup>
+        <br>
+        <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
+      </div>
+    </div>
+  </div> 
+</div>
+
+
  
          
-<div id="sequence" class="seq">
 
-  <div class="seq-screen">
-    <ul class="seq-canvas">
-    
-     <li>
-        <div class="seq-model">
-          <img data-seq src="images/ind.png" alt="Industrial uniform" />
-        </div>
-
-        <div class="seq-title">
-          <h2 data-seq  >Industrial Uniform</h2>
-          <h3 data-seq>Pioneering industrial workwear and uniforms in Saudi Arabia across various industry sectors
-           
-          <br>
-          <br>
-            <br>
-          <br>
-          <a href="industrial-wear.html" class="btn btn-danger btn-luxe-primary" title="Read More">Read More <i class="ti-angle-right"></i></a>
-          </h3>
-        </div>
-      </li>
-      <li>
-        <div class="seq-model">
-          <img data-seq src="images/H.png" alt="khadama uniforms" />
-        </div>
-
-        <div class="seq-title">
-          <h2 data-seq>Hospitality Uniform</h2>
-          <h3 data-seq>Specialists in hospitality staff uniform for both front-of-house and back-of-house teams
-          
-          <br>
-<br>
- <br>
-          <br>
-          <a href="hospitality-uniform.html" class="btn btn-danger btn-luxe-primary" title="Read More">Read More <i class="ti-angle-right"></i></a>
-          </h3>
-        </div>
-      </li>
-
-                  <li class="seq-in">
-                    <div class="seq-model">
-                      <img data-seq src="images/school-uniform.png" alt="school uniforms" />
-                      
-                      
-                    </div>
-                    
-                    
-
-                    <div class="seq-title">
-                      <h2 data-seq>School Uniform</h2>
-                      <h3 data-seq>
-                      We provide designing and manufacturing services in all kinds of schoolwear and  school uniforms 
-                      <br>
-                <br>
-                <br>
-                <br>
-
-                      <a href="school-uniforms.html" class="btn btn-danger btn-luxe-primary" title="Read More">Read More <i class="ti-angle-right"></i></a>
-                      </h3>
-                      
-                    </div>
-                  </li>
-                  <li>
-                    <div class="seq-model">
-                      <img data-seq src="images/helth.png" alt="health care uniforms manufacturer" />
-                    </div>
-          
-                    <div class="seq-title">
-                      <h2 data-seq>Health Care Uniform </h2>
-                      <h3 data-seq>Being a health care uniforms manufacturer, we provide a broad range of hospital uniforms
-                      
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <a href="health-care-uniform.html" class="btn btn-danger btn-luxe-primary" title="Read More">Read More <i class="ti-angle-right"></i></a>
-                      
-                      </h3>
-                    </div>
-                  </li>
-
-     <li>
-        <div class="seq-model">
-          <img data-seq src="images/aviation.png" alt="khadama uniforms" />
-        </div>
-
-        <div class="seq-title">
-          <h2 data-seq>Aviation Uniform</h2>
-          <h3 data-seq>MAQ MHA Trading Company  Uniforms is a pioneer of Aviation uniform across Saudi Arabia
-          
-          <br>
-<br>
- <br>
-          <br>
-          <a href="aviation-uniform.html" class="btn btn-danger btn-luxe-primary" title="Read More">Read More <i class="ti-angle-right"></i></a>
-          </h3>
-        </div>
-      </li>
-     
-<!--       
-      <li class="seq-in">
-        <div class="seq-model">
-          <img data-seq src="images/hotel.png" alt="school uniforms" />
-          
-          
-        </div>
-        
-         
-
-        <div class="seq-title">
-          <h2 data-seq>HOTEL UNIFORMS</h2>
-          <h3 data-seq> 
-          We provide designing and manufacturing services in all kinds of Hotelwear and  Hotel uniforms 
-          <br>
-<br>
-<br>
-<br>
-
-          <a href="uniform.html" class="btn btn-danger btn-luxe-primary" title="Read More">Read More
-             <i class="ti-angle-right"></i></a>
-          </h3>
-          
-        </div>
-      </li> -->
-      
-     <!-- <li>
-        <div class="seq-model">
-          <img data-seq src="images/security-uniform.png" alt="security uniform" />
-        </div>
-
-        <div class="seq-title">
-          <h2 data-seq>SECURITY UNIFORM</h2>
-          <h3 data-seq>Properly designed security uniforms display a good professional image and <br>develop confidence 
-
-          <br>
-          <br>
-          <a href="#" class="btn btn-danger btn-luxe-primary" title="Read More">Read More <i class="ti-angle-right"></i></a>
-          
-          </h3>
-        </div>
-      </li> -->
-
-      
-      
-      
-      <li>
-        <div class="seq-model">
-          <img data-seq src="images/corporate-uniform.png" alt="corporate uniform" />
-        </div>
-
-        <div class="seq-title">
-          <h2 data-seq>Corporate Uniform</h2>
-          <h3 data-seq>MAQ MHA Trading Company are very proud of providing different services including designing,
-             manufacturing and supplying in all varieties of corporate,company wear
-          
-          <br>
-<br>
- <br>
-          <br>
-          <a href="corporate-uniforms.html" class="btn btn-danger btn-luxe-primary" title="Read More">Read More <i class="ti-angle-right"></i></a>
-          </h3>
-        </div>
-      </li>
-      
-      
-      
-      
-    </ul>
-  </div>
-
-  <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
-    <button type="button" class="seq-prev" aria-label="Previous">Previous</button>
-    <button type="button" class="seq-next" aria-label="Next">Next</button>
-  </fieldset>
-
-</div>
 
 <!-- slider -->
 
@@ -627,7 +640,7 @@
 							<div class="box animate-box1">
 								<div class="col-md-6">
                                 
-                                <div class="gap40"></div>
+                                <div class="gap160"></div>
 									
 									<h2 class="text-info">What We Do</h2>
 									
@@ -652,7 +665,7 @@
                                 
                                 <div class="col-md-6">
                                 
-                                <div class=" gap80"></div>
+                                <div class=" gap160"></div>
 									
                                 <!-- <img src="images/t.gif" class="size" alt=">Uniform Manufacturer in UAE"> -->
                                 <img src="images/uniforms-tailor.png" class="size" alt=">Uniform Manufacturer in UAE">
@@ -1658,6 +1671,8 @@ Uniforms play an important role in enhancing the business and branding of your c
 	<!-- END fh5co-wrapper -->
 	
 	<!-- Javascripts -->
+  <!-- <script src="owl-carousel/owl.carousel.js"></script> -->
+
 	<script src="js/jquery-2.1.4.min.js"></script>
     
     	<!-- Bootstrap -->
@@ -1719,8 +1734,8 @@ $(document).ready(function() {
     <!--banner slider-->
     
   <script src="scripts/imagesloaded.pkgd.min.js"></script>
-  <script src="scripts/sequence.min.js"></script>
-  <script src="scripts/sequence-theme.modern-slide-in.js"></script>
+  <!-- <script src="scripts/sequence.min.js"></script> -->
+  <!-- <script src="scripts/sequence-theme.modern-slide-in.js"></script> -->
   
   <!--slider end-->
 
@@ -1904,7 +1919,7 @@ Keeping all the areas clean and organized helps in improving the hygiene and saf
 
 
 </script>
-    
+
 
 
 
@@ -1926,6 +1941,7 @@ Keeping all the areas clean and organized helps in improving the hygiene and saf
 })();
 
 </script>  -->
+
 
 </body>
 

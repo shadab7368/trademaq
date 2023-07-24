@@ -1685,7 +1685,7 @@ a.text-success:focus {
 
 .text-info {
   /* color: #31708f; */
-  color: rgb(170 0 0);
+  color: #007fff
 }
 
 a.text-info:hover,
@@ -7711,7 +7711,10 @@ figure {
 }
 
 .sf-menu a {
-  color: #3b5998;
+
+  color: #436b95;
+  color: #ffffff;
+
   padding: 2.4em 1.3em !important;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -8925,7 +8928,7 @@ input[type="text"] {
 
 .fh5co-bg-color2 {
   background: #262626;
-  background-color: #000;
+  background-color: #436b95;
 }
 
 .section-title {
@@ -9415,7 +9418,8 @@ color:#fff !important;
 .topstript{ min-height:30px !important;
 margin:0px 0px 0px 0px;
 border-top:0px solid #C7C8C8 ;
-background-color:#091e3e;
+
+background-color: #0f4d92;
 padding-top:10px;
 color:#fff !important;
 
