@@ -56,142 +56,11 @@
 	<!-- Date Picker -->
 
 
-<style>
-  /*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
-*/
 
-/********************************/
-/*       Fade Bs-carousel       */
-/********************************/
-.fade-carousel {
-  padding-top: 70px; 
-  position: relative;
-    height: 50vh;
-}
-.fade-carousel .carousel-inner .item {
-    height: 50vh;
-}
-.fade-carousel .carousel-indicators > li {
 
-  margin: 2px;
-    background-color: #7312f3;
-    border-color: #f39c12;
-    opacity: .7;
-}
-.fade-carousel .carousel-indicators > li.active {
-
-  width: 10px;
-  height: 10px;
-  opacity: 1;
-}
-
-/********************************/
-/*          Hero Headers        */
-/********************************/
-.hero {
-  /* padding-top: 150px; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    color: #141414;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(30, 30, 30, 0.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
-}
-.hero h1 {
-    font-size: 6em;    
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
-
-.fade-carousel .carousel-inner .item .hero {
-    opacity: 0;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s; 
-}
-.fade-carousel .carousel-inner .item.active .hero {
-    opacity: 1;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s;    
-}
-
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 00%;
-    z-index: 2;
-    background-color: #1d61ce;
-    opacity: .7;
-}
-
-/********************************/
-/*          Custom Buttons      */
-/********************************/
-.btn.btn-lg {padding: 10px 40px;}
-.btn.btn-hero,
-.btn.btn-hero:hover,
-.btn.btn-hero:focus {
-    color: #3b15f7;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-    outline: none;
-    margin: 20px auto;
-   
-}
-
-/********************************/
-/*       Slides backgrounds     */
-/********************************/
-.fade-carousel .slides .slide-1, 
-.fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.fade-carousel .slides .slide-1 {
-  background-image: url(/trademaq/images/slider/slide1.jpg)
-}
-.fade-carousel .slides .slide-2 {
-  background-image: url(/trademaq/images/slider/slide2.jpg);
-}
-.fade-carousel .slides .slide-3 {
-  background-image: url(/trademaq/images/slider/slide3.jpg);
-}
-
-/********************************/
-/*          Media Queries       */
-/********************************/
-@media screen and (min-width: 980px){
-    .hero { width: 980px; }    
-}
-@media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
-}
-</style>
 </head>
-
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/scroll.css">
 
 	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
 
@@ -474,7 +343,7 @@ Image credits: unsplash.com
 					<a href="index.html" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 					<h2 id="fh5co-logo">
                     <a class="logo img-responsive" href="index.html" title="Uniforms Manufacturer & Suppliers">
-                    <img src="images/logo.png" alt="Uniforms Manufacturer & Suppliers" class="logo-cont" >
+                    <img src="images/logo1.png" alt="Uniforms Manufacturer & Suppliers" class="logo-cont" >
                     </a>
                     </h2>
 					
@@ -586,9 +455,11 @@ Image credits: unsplash.com
       <div class="slide-1"></div>
       <div class="hero">
         <hgroup>
-            <h1>School Uniform</h1>        
-            <h3 class="text-info">School Uniform
-              We provide designing and manufacturing services in all kinds of schoolwear and school uniforms</h3>
+           
+          <h1>Corporate Uniform</h1>        
+          <h3 class="text-white">MAQ MHA Trading Company are very proud of providing different services including designing, manufacturing and supplying in all varieties of corporate,company weart</h3>
+          
+         
         </hgroup>
         <!-- <button class="btn btn-hero" role="button">See all features</button> -->
       </div>
@@ -597,8 +468,9 @@ Image credits: unsplash.com
       <div class="slide-2"></div>
       <div class="hero">        
         <hgroup>
-            <h1>Corporate Uniform</h1>        
-            <h3 class="text-info">MAQ MHA Trading Company are very proud of providing different services including designing, manufacturing and supplying in all varieties of corporate,company weart</h3>
+          <h1>Industrial Uniform</h1>        
+          <h3 class="text-white">Industrial Uniform
+            We provide designing and manufacturing services in all kinds of Industrial uniforms</h3>
         </hgroup>       
         <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
       </div>
@@ -608,7 +480,7 @@ Image credits: unsplash.com
       <div class="hero">        
         <hgroup>
             <h1>Aviation Uniform</h1>        
-            <h3 class="text-info">MAQ MHA Trading Company Uniforms is a pioneer of Aviation uniform across Saudi Arabia</h3>
+            <h3 class="text-white">MAQ MHA Trading Company Uniforms is a pioneer of Aviation uniform across Saudi Arabia</h3>
         </hgroup>
         <br>
         <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
@@ -1345,10 +1217,49 @@ Uniforms play an important role in enhancing the business and branding of your c
 
 	</div>
     
-
-
+<div class="container">
+  <div class="marquee">
+    <div class="marquee-content">
+        <span class="item-collection-1">
+            <span><img src="/trademaq/images/clients/client-1.jpg" height="80"></span>
+            <span><img src="/trademaq/images/clients/client-2.jpg" height="80"></span>
+            <span><img src="/trademaq/images/clients/client-3.jpg" height="80"></span>
+            <span> <img src="/trademaq/images/clients/client-4.jpg" height="80"></span>
+            <span> <img src="/trademaq/images/clients/client-5.jpg" height="80"></span>
+            <span> <img src="/trademaq/images/clients/client-6.jpg" height="80"></span>
+            <span > <img src="/trademaq/images/clients/client-7.jpg" height="80"></span>
+            <span > <img src="/trademaq/images/clients/client-8.jpg" height="80"></span>
+            <span > <img src="/trademaq/images/clients/client-9.jpg" height="80"></span>
+            <span > <img src="/trademaq/images/clients/client-10.jpg" height="80"></span>
+            <span > <img src="/trademaq/images/clients/client-11.jpg" height="80"></span>
+            <span > <img src="/trademaq/images/clients/client-12.jpg" height="80"></span>
+            <span > <img src="/trademaq/images/clients/client-13.jpg" height="80"></span>
+            <span > <img src="/trademaq/images/clients/client-14.jpg" height="80"></span>
+            <span > <img src="/trademaq/images/clients/client-15.jpg" height="80"></span>
+        </span>
+        <span class="item-collection-2">
+          <span><img src="/trademaq/images/clients/client-1.jpg" height="80"></span>
+          <span><img src="/trademaq/images/clients/client-2.jpg" height="80"></span>
+          <span><img src="/trademaq/images/clients/client-3.jpg" height="80"></span>
+          <span> <img src="/trademaq/images/clients/client-4.jpg" height="80"></span>
+          <span> <img src="/trademaq/images/clients/client-5.jpg" height="80"></span>
+          <span> <img src="/trademaq/images/clients/client-6.jpg" height="80"></span>
+          <span > <img src="/trademaq/images/clients/client-7.jpg" height="80"></span>
+          <span > <img src="/trademaq/images/clients/client-8.jpg" height="80"></span>
+          <span > <img src="/trademaq/images/clients/client-9.jpg" height="80"></span>
+          <span > <img src="/trademaq/images/clients/client-10.jpg" height="80"></span>
+          <span > <img src="/trademaq/images/clients/client-11.jpg" height="80"></span>
+          <span > <img src="/trademaq/images/clients/client-12.jpg" height="80"></span>
+          <span > <img src="/trademaq/images/clients/client-13.jpg" height="80"></span>
+          <span > <img src="/trademaq/images/clients/client-14.jpg" height="80"></span>
+          <span > <img src="/trademaq/images/clients/client-15.jpg" height="80"></span>
+        </span>
+    </div>
+    </div>
+</div>
+  <!-- client scrolling end  -->
   <div class="gap60"></div>
-            <div class="container-fluid">
+            <!-- <div class="container-fluid">
             <div class="container">
             <div class="col-lg-4  slideanim2 slide2">
             <div class="apply-box text-center"> <br>
@@ -1392,23 +1303,9 @@ Uniforms play an important role in enhancing the business and branding of your c
             </div>
             </div>
             
-            <!-- <div class="col-lg-3 slideanim2 slide2">
-            <div class="apply-box text-center"> <br>
-            <i class="fa fa-phone fa-2x text-primary" aria-hidden="true" style="color:#060d71;"></i> 
-            <br><br>
-            <h4 class="margin0 ">Customer Care</h4>
-            
-            Dedicated specialists await you.
-            <br>
-            CALL US NOW <br>
-            <span class="text-danger"><strong>+966 56 380 3003</strong></span></br>
-            <span class="text-danger"><strong>+966 59 427 8797</strong></span>
-            
-            
+           
             </div>
             </div> -->
-            </div>
-            </div>
 
 
     </div>
@@ -1447,7 +1344,9 @@ Uniforms play an important role in enhancing the business and branding of your c
 				<div>
 					  <div class="box animate-box">
                
-					<img src="images/SPAR-Group.png" alt="spar group" style="width:300px;">
+               
+					<!-- <img src="images/SPAR-Group.png" alt="spar group" style="width:300px;"> -->
+					<img src="images/logo2.png" alt="spar group" style="width:300px;">
                 
                 
                 </div>
@@ -1582,85 +1481,11 @@ Uniforms play an important role in enhancing the business and branding of your c
 
     <!-- end of footer  -->
 
-   
-    
-<!--     
-    <div id="cust-top" style="#fff">
-		         
-		   
-    
-    <div class="smoothscroll customer-care">
-           <img src="images/customer-care.png" alt="connect with whatsapp">
-          </div>
-            
-         </div> 
-          -->
          
              <a href="https://api.whatsapp.com/send?phone=966563803003&amp;text=&amp;source=&amp;data=" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
-
-             <!-- <a href="https://api.whatsapp.com/send?phone=966563803003&amp;text=&amp;source=&amp;data=" class="float2" target="_blank">
-<i class="fa fa-whatsapp my-float2"></i> 
-</a> --> 
-    <!--end footer-->
-    
-    
-       <!--================ Start enquiry form  =================-->
-           
-           <!-- <div class="sidebar-contact">
-    <div class="toggle"></div>
-    <h3 style="margin-left:15px;">Get Call Back</h3>
-    <div class="scroll">
-       <form id="contact-form" method="post" action="https://www.maqtrading.com/contact.php" role="form">
-                    <div class="messages"></div>
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    
-                                    <input id="name" type="text" name="name" class="form-control"  
-                                        data-error="Firstname is required." required placeholder="Your Name *">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                          
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                  
-                                    <input id="email" type="email" name="email" class="form-control"  required 
-                                        data-error="Valid email is required." placeholder="Email *">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    
-                                    <input id="msg" type="tel" name="phone" class="form-control" placeholder="Phone" >
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                     
-
-
-
-
-                        <input type="submit" class="btn btn-success btn-send" value="Send message">
-
-                    </div>
-
-                </form>
-    </div>
-  </div> -->
-        
-           <!--================ End enquiry form  =================-->
-<!-- 		
-	<div id="go-top" style="#fff">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div> -->
+>
 
 	</div>
 	<!-- END fh5co-page -->
@@ -1844,84 +1669,6 @@ $('#main').on('click', function(){
     <script src="contact.js"></script> -->
  <!--end google recaptcha -->
  
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "ARE ALL STUDENTS REQUIRED TO WEAR SCHOOL UNIFORMS? WHAT ABOUT PRE-K STUDENTS?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The school uniform policy is mandatory for all K-12 students; however, pre-K students aren't required to wear uniforms."
-    }
-  },{
-    "@type": "Question",
-    "name": "WHAT ARE WORKWEAR UNIFORMS?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The term “ workwear” is usually misused to explain work uniforms generally . Yet workwear is quite just work clothing. A workwear uniform consists of clothing intended to guard workers in how . Workwear clothing is usually heavy-duty and suitable for an industrial, manufacturing or similar environment."
-    }
-  },{
-    "@type": "Question",
-    "name": "WHY SCHOOL UNIFORM IS IMPORTANT IN A STUDENT’S & INSTITUTION’S LIFE",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "School is the most important foundation phase of anyone’s life. A vibrant school uniform adds on to the excitement of every school-going child when he/she put it on. A decent and good-looking school uniform plays a major role in spreading uniformity, belongingness and equality among students no matter from which class, section, religion, region, economic strata or country they belong to. MAQ MHA Trading Company is one of the best manufacturers and suppliers of school uniforms in Saudi Arabia ."
-    }
-  },{
-    "@type": "Question",
-    "name": "WHY UNIFORM IS BENEFICIAL FOR YOUR ORGANIZATION",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Uniforms play an important role in enhancing the business and branding of your company in various ways. MAQ MHA Trading Company is one of the best uniform companies in Saudi Arabia. The customized uniforms at MAQ MHA Trading Company exhibit a unique identity of your organization or company and play an important role in forming the overall brand image. It is very important to make uniforms an integral part of your institution which puts forward a number of advantages for the organization as well as the employees. A specific MAQ MHA Trading Company uniform of an organization or company reflects uniformity in form, pattern, manner, rule, procedure, and conduct of its brand in the society or customers which attracts them towards their products."
-    }
-  },{
-    "@type": "Question",
-    "name": "WHY TO HAVE MAID (KHADMA) UNIFORM?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "A maid is a female domestic worker or servant with various duties, especially in someone’s home or in a hotel. They are also known as housemaids or maidservants. Her main role and responsibility is to maintain hygiene and cleanliness but they also do a variety of other tasks such as ironing, grocery shopping, and cooking.
-
-Keeping all the areas clean and organized helps in improving the hygiene and safety of the environment. The maids and housekeepers need to wear suitable uniforms that look professional and at the same time be comfortable and unrestrictive to allow them to perform their activities with the utmost ease."
-    }
-  },{
-    "@type": "Question",
-    "name": "WHY WEARING A CORRECT UNIFORM IS VITAL",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Uniforms are an excellent team-building resource for your staff, and that they can improve overall customer service also as brand awareness. Company uniforms make it easy for buyers to locate employees during a crowd, lowering on reaction time . Uniforms also benefit client satisfaction by extending awareness of your company both during and out of doors of labor hours. Employees who wear uniforms with a company’s logo and colours allow your business to become instantly recognizable by local customers."
-    }
-  },{
-    "@type": "Question",
-    "name": "DO WORKWEAR UNIFORMS ENHANCE COMPANY IMAGE?",
-    "acceptedAnswer": {
-
-      "@type": "Answer",
-      "text": "Yes, they do. Uniforms provide a uniform look and message across all employees, adding to the positive image your company is already projecting. Workwear uniforms do all that while also protecting your employees."
-    }
-  },{
-    "@type": "Question",
-    "name": "WHY PROVIDE MEDICAL UNIFORMS TO EMPLOYEES?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Providing medical uniforms directly impacts employees’ level of comfort, confidence, and professional appearance. If your medical facility doesn’t provide medical uniforms to employees, you’re taking tremendous risks. Considering the extent of contaminants on nurse’s scrubs after one shift, there’s great cause for absolute cleanliness. the simplest thanks to assure that cleanliness is to supply medical workers with the uniforms they have ."
-    }
-  },{
-    "@type": "Question",
-    "name": "WHY DO PEOPLE WEAR SURGICAL SCRUB?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "They are a sort of protective clothing designed to be worn by medical staff during times when they’re likely to return into contact with an infectious substance or liquid body substance . They protect the wearer from making contact thereupon substance by forming a barrier between them and it. This makes sure the medical environment is clean and safe for clinicians and patients."
-    }
-  }]
-}
-
-
-</script>
-
-
-
 
       
        <!-- <script>
