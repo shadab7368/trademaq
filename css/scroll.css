@@ -9,12 +9,12 @@
 .marquee-content {
   display: inline-block;
   margin-top: 5px;
-  animation: marquee 40s linear infinite;
+  animation: marquee 70s linear infinite;
 }
 .item-collection-1 {
   position: relative;
   left: 0%;
-  animation: swap 40s linear infinite;
+  animation: swap 70s linear infinite;
 }
 @keyframes swap {
   0%, 50% {
