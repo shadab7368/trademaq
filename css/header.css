@@ -111,7 +111,9 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4, 
+.fade-carousel .slides .slide-5 {
 
   height: 700px;
   width: 100%;
@@ -126,7 +128,13 @@ Image credits: unsplash.com
   background-image: url(/trademaq/images/slider/11.jpg);
 }
 .fade-carousel .slides .slide-3 {
+  background-image: url(/trademaq/images/slider/slide4.jpg);
+}
+.fade-carousel .slides .slide-4 {
   background-image: url(/trademaq/images/slider/slide3.jpg);
+}
+.fade-carousel .slides .slide-5 {
+  background-image: url(/trademaq/images/slider/slide5.jpg);
 }
 
 /********************************/
