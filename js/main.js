@@ -38,22 +38,21 @@ $(document).ready(function () {
   });
 
   // Mobile Navigation
-  $(".nav-toggle").on("click", function () {
-    $(this).toggleClass("close-nav");
-    nav.toggleClass("open");
-    return false;#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-}
-  });
+  //   $(".nav-toggle").on("click", function () {
+  //     $(this).toggleClass("close-nav");
+  //     nav.toggleClass("open");
+  //     return false;#btn-back-to-top {
+  //   position: fixed;
+  //   bottom: 20px;
+  //   right: 20px;
+  //   display: none;
+  // }
+  //   });
   nav.find("a").on("click", function () {
     $(".nav-toggle").toggleClass("close-nav");
     nav.toggleClass("open");
   });
 });
-
 
 /*---------------------------------------------------- */
 /* Smooth Scrolling
