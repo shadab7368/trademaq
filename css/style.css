@@ -8858,6 +8858,7 @@ input[type="text"] {
 }
 #footer a {
   color: #f3f3f3;
+  /* color: #000000; */
 }
 #footer a:hover {
   text-decoration: underline !important;
@@ -8931,10 +8932,13 @@ input[type="text"] {
 }
 
 .fh5co-bg-color2 {
+  background-color: whitesmoke;
   background: #262626;
   background-color: #436b95;
+ 
 }
 
+;
 .section-title {
   margin-bottom: 5em;
   float: left;
