@@ -7023,7 +7023,7 @@ button.close {
   border: 1px solid #fff;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #000 \9;
+  background-color: #0009;
   background-color: transparent;
 }
 .carousel-indicators .active {
@@ -9021,9 +9021,11 @@ input[type="text"] {
 }
 .fh5co-parallax .fh5co-intro h1 {
   color: #fff;
+  
   font-weight: 400;
   margin-top: 363px;
   background-color:#2b2b2b;
+  background-color: #0f4d92;
   opacity:.8;
 }
 @media screen and (max-width: 768px) {
@@ -9156,6 +9158,8 @@ color:#fff !important;
 }
 .fh5co-parallax2 .fh5co-intro p a {
   color: #091e3e;
+  
+
   border-bottom: 2px solid rgba(255, 87, 34, 0.2);
 }
 .fh5co-parallax2 .fh5co-intro p a:hover {
