@@ -35,9 +35,10 @@
 	<meta name="robots" content="noodp" />
 	<meta name="geo.region" content="ae"/>
 	<meta name="distribution" content="global" />
-	
-    
+  
 
+
+  
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
   
 
@@ -445,91 +446,87 @@
 
 
 <div class="gap40"></div>
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="10000" id="bs-carousel">
-  <!-- Overlay -->
-  <div class="overlay"></div>
 
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#bs-carousel" data-slide-to="1"></li>
-    <li data-target="#bs-carousel" data-slide-to="2"></li>
-    <li data-target="#bs-carousel" data-slide-to="3"></li>
-    <li data-target="#bs-carousel" data-slide-to="4"></li>
-    <li data-target="#bs-carousel" data-slide-to="5"></li>
-  </ol>
-  
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item slides active">
-      <div class="slide-1"></div>
-      <div class="hero">
-        <hgroup>
-           
-          <h1 class="text-white">Corporate Uniform</h1>        
-          <div class="gap60"></div>
-          
-         
-        </hgroup>
-        <!-- <button class="btn btn-hero" role="button">See all features</button> -->
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-2"></div>
-      <div class="hero">        
-        <hgroup>
-          <h1 class="text-white">Industrial Uniform</h1>        
-          <div class="gap60"></div>
-        </hgroup>       
-        <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-3"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1 class="text-white">Health Care Uniform </h1>        
-            <div class="gap60"></div>
-        </hgroup>
-        <br>
-       
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-4"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1 class="text-white">Aviation Uniform</h1>        
-            <div class="gap60"></div>
-        </hgroup>
-        <br>
-       
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-5"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1 class="text-white">Hospitality Uniform</h1>        
-            <div class="gap60"></div>
-        </hgroup>
-        <br>
-       
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-6"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1 class="text-white">Corporate Gift</h1>        
-           <div class="gap60"></div>
-        </hgroup>
-        <br>
-       
-      </div>
-    </div>
-  </div> 
+<div class="gap60"></div>
+
+<!-- <div class="container-fluid"> -->
+  <!--Bootstrap card with slider class-->
+
+  <div id="carousel-demo"
+      class="carousel slide"
+      data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="item active">
+              <img src=
+"images/slider/slide2.jpg">
+<div class="carousel-caption">
+  <span class="text-white text-uppercase text-bold" style="font-size: 50px;">Corporate uniform</span>
 </div>
+          </div>
+          <div class="item">
+            <img src=
+"images/slider/11.jpg">
+<div class="carousel-caption">
+<span class="text-white text-uppercase text-bold" style="font-size: 50px;">industrial uniform</span>
+</div>
+        </div>
+          <div class="item">
+              <img src=
+"images/slider/slide3.jpg">
+<div class="carousel-caption">
+  <span class="text-white text-uppercase text-bold" style="font-size: 50px;">aviation uniform</span>
+</div>        
+
+          </div>
+          <div class="item">
+            <img src=
+"images/slider/slide4.jpg">
+<div class="carousel-caption">
+  <span class="text-white text-uppercase text-bold " style="font-size: 50px;">health care uniform</span>
+</div>       
+
+        </div>
+          <div class="item">
+            <img src=
+"images/slider/slide5.jpg">
+<div class="carousel-caption">
+  <span class="text-white text-uppercase text-bold" style="font-size: 50px;">hospitality uniform</span>
+</div>      
+
+        </div>
+          <div class="item">
+            <img src=
+"images/slider/slide6.jpg">
+<div class="carousel-caption">
+  <span class="text-white text-uppercase text-bold" style="font-size: 50px;">corporate gift</span>
+</div>
+       
+        </div>
+          <!-- <div class="mask rgba-black-light"></div> -->
+          <!-- <div class="carousel-caption"> -->
+        
+          
+          </div>
+      </div>
+ 
+      <!--slider control for card-->
+
+      <a class="left carousel-control"
+      href="#carousel-demo"
+      data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left">
+      </span>
+      </a>
+      <a class="right carousel-control"
+      href="#carousel-demo"
+      data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right">
+      </span>
+      </a>
+
+  </div>
+<!-- </div> -->
+
 
 
  
@@ -555,7 +552,7 @@
 							<div class="box animate-box">
 								<div class="col-md-6">
                                 
-                                <div class="gap160"></div>
+                                <div class="gap20"></div>
   
 									
 									<h2 class="text-info">What We Do </h2>
@@ -1558,33 +1555,7 @@ Uniforms play an important role in enhancing the business and branding of your c
    <!--mobile menu--> 
      <script src="mtree-2.js"></script>
 <script src="mtree.js"></script> 
-<script>
-$(document).ready(function() {
-  var mtree = $('ul.mtree');
-  
-  // Skin selector for demo
-  mtree.wrap('<div class=mtree-demo></div>');
-  var skins = ['bubba','skinny','transit','jet','nix'];
-  mtree.addClass(skins[0]);
-  $('body').prepend('<div class="mtree-skin-selector"><ul class="button-group radius"></ul></div>');
-  var s = $('.mtree-skin-selector');
-  $.each(skins, function(index, val) {
-    s.find('ul').append('<li><button class="small skin">' + val + '</button></li>');
-  });
-  s.find('ul').append('<li><button class="small csl active">Close Same Level</button></li>');
-  s.find('button.skin').each(function(index){
-    $(this).on('hover', function(){
-      s.find('button.skin.active').removeClass('active');
-      $(this).addClass('active');
-      mtree.removeClass(skins.join(' ')).addClass(skins[index]);
-    });
-  })
-  s.find('button:first').addClass('active');
-  s.find('.csl').on('hover', function(){
-    $(this).toggleClass('active'); 
-  });
-});
-</script>
+
 <!-- <script>
   //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
@@ -1650,7 +1621,32 @@ function backToTop() {
     
         <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript">
+      
+      
+      <script>
+        $(document).ready(function () {
+          $('#myCarousel').carousel({
+              interval: 10000
+          })
+          $('.fdi-Carousel .item').each(function () {
+              var next = $(this).next();
+              if (!next.length) {
+                  next = $(this).siblings(':first');
+              }
+              next.children(':first-child').clone().appendTo($(this));
+          
+              if (next.next().length > 0) {
+                  next.next().children(':first-child').clone().appendTo($(this));
+              }
+              else {
+                  $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+              }
+          });
+        });
+        </script>
+      
+      
+      <script type="text/javascript">
             $(function() {
                 $('#ei-slider').eislideshow({
 					easing		: 'easeOutExpo',
