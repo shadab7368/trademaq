@@ -1686,6 +1686,7 @@ a.text-success:focus {
 .text-info {
   /* color: #31708f; */
   color: #ff6200;
+  color: #436b95;
   font-family: 'Neuton', serif;
 }
 
@@ -7883,7 +7884,7 @@ figure {
   content: '';
 }
 #fh5co-primary-menu .fh5co-sub-menu > li > .fh5co-sub-menu {
-  left: -92.1%;
+  left: 100%;
 }
 #fh5co-primary-menu .fh5co-sub-menu > li > .fh5co-sub-menu:after {
   position: absolute;
