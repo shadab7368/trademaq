@@ -9647,16 +9647,31 @@ img.size{width:100% !important; height:auto !important;}
 
     padding:15px !important;
     width:100% !important;
-   height:300px; !important;
-	border:1px solid #EFEBEB;
+   height:630px !important;
+	border:1px solid #000000;
 
-	text-align:center;
+	/* text-align:center; */
 
 
 
 	
 } 
 
+
+.BoxCorner-contact3 {
+
+
+  padding:15px !important;
+  width:100% !important;
+ height:350px; !important;
+border:1px solid #000000;
+
+/* text-align:center; */
+
+
+
+
+} 
 .padding20{padding:20px !important; }
 
 /*.fa-whatsapp:before{color:#48C85D !important; padding-bottom:8px !important; font-size:30px !important;}*/
