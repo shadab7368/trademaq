@@ -108,7 +108,8 @@ ul.mtree.skinny ul a {
 }
 
 ul.mtree.transit {
-  background: #091e3e
+  /* background: #091e3e; */
+  background: #ffffff;
 }
 ul.mtree.transit ul {
   margin-left: 0;
@@ -140,7 +141,7 @@ ul.mtree.transit li.mtree-open > a {
   background: #222;
 }
 ul.mtree.transit li > a:hover, ul.mtree.transit li.mtree-active > a {
-  background: rgb(15, 61, 227);
+  background: rgb(228, 229, 233);
   color: #fafff7;
 }
 ul.mtree.transit li.mtree-node > ul > li:last-child {
@@ -195,7 +196,7 @@ ul.mtree.jet li.mtree-active > a {
 }
 ul.mtree.jet li > a:hover {
   background: #FFC000;
-  color: #FFF;
+  color: #000000;
 }
 ul.mtree.jet a {
   padding: 5px 0px 5px 1em;

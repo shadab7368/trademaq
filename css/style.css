@@ -9842,7 +9842,8 @@ color: #fff;
     z-index: 9999;
     top: 0;
     right: 0 !important;
-    background-color: #091e3e;
+    background-color: #ffffff;
+   
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -9853,12 +9854,14 @@ color: #fff;
     text-decoration: none;
     font-size: 14px;
     color: #fff;
+    color: #000000;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
     color: #e7f5fc;
+   
 }
 
 .sidenav .closebtn {
