@@ -1978,10 +1978,9 @@ pre code {
   .container {
     width: 760px;
   }
-  .copyright{
+  
 
-font-size: 5px;
-  }
+
 }
 @media (min-width: 992px) {
   .container {
@@ -9662,9 +9661,9 @@ img.size{width:100% !important; height:auto !important;}
 
 @media only screen and (max-width: 720px) {
   .BoxCorner-contact3 {
-  padding:15px !important;
+  padding:20px !important;
     width:100% !important;
-   height:400px !important;
+   height:450px !important;
 	border:1px solid #000000;
 
   }

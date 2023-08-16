@@ -455,7 +455,8 @@ Suite No-8, Al Yasmin Building Building No – 24, <br/>Abad Bin Hanif Street, <
 <li><i class="icon-phone"></i>+966 59 427 8797, +966 56 380 3003 <br> &nbsp; &nbsp;
 	+966 53 910 3678 , 966 54 805 4111</li>
 						<!--<li><i class="fa fa-whatsapp whatsapp"></i> <strong>Hotline</strong>  +971 556194036</li>-->
-                        <li><i class="icon-envelope"></i><a href="mailto:info@maqtrading.com">info@maqtrading.com</a></li>
+                   
+						<li><i class="icon-envelope"></i><a href="mailto:info@maqtrading.com">info@maqtrading.com</a></li>
                         <li class="text-right"><a href="https://api.whatsapp.com/send?phone=966563803003&amp;text=&amp;source=&amp;data=" target="_blank" title="contact us"><img src="images/img-whatsapp.png" alt="Uniform factory in Saudi Arabia" style="width:200px;"></a></li>
 						
 						
@@ -481,7 +482,8 @@ Suite No-8, Al Yasmin Building Building No – 24, <br/>Abad Bin Hanif Street, <
 
 	<!-- <div class="BoxCorner-contact2"> -->
 		<div class="container">
-		<form onsubmit="sendEmail(); reset(); return false;">
+			<div class="success-mail-large"   id="contact_results"></div>
+			<form onsubmit="sendEmail(); reset(); return false;">
 			<div  class="BoxCorner-contact2">
 			<div class="row">
 				
@@ -499,16 +501,16 @@ Suite No-8, Al Yasmin Building Building No – 24, <br/>Abad Bin Hanif Street, <
 				
 				<div class="col-lg-4 col-sm-12 col-lg-offset-2">
 				
-					<input id="name" type="text" class="form-control bg-light border-0" placeholder="First" required style="height: 40px;">
+					<input id="firstname" type="text" class="form-control bg-light border-0" placeholder="First" required style="height: 40px;">
 				</div>
 				<div class="col-lg-4 col-sm-12">
-					<input type="email" id="email" class="form-control bg-light border-0" placeholder="Last" required style="height: 40px;" >
+					<input type="lastname" id="lastname" class="form-control bg-light border-0" placeholder="Last" required style="height: 40px;" >
 				</div>
 				<div class="col-lg-12 col-sm-12 col-lg-offset-2">
 					<label for="html"> <i class="fa fa-building"></i> My Company Name</label>
 				</div>
 				<div class="col-lg-8 col-sm-12 col-lg-offset-2">
-					<input id="location" type="text" class="form-control bg-light border-0" placeholder="My Company Name" required 
+					<input id="companyname" type="text" class="form-control bg-light border-0" placeholder="My Company Name" required 
 					style="height: 40px;">
 				</div>
 				
@@ -554,6 +556,7 @@ Suite No-8, Al Yasmin Building Building No – 24, <br/>Abad Bin Hanif Street, <
 				<div class="col-lg-6 col-sm-12 col-lg-offset-2">
 					<div class="gap10"></div>
 					<button class="btn btn-primary" required style="width: 240px;" type="submit">Submit</button>
+			
 				</div>
 			</div>
 			</div>
@@ -570,7 +573,7 @@ Suite No-8, Al Yasmin Building Building No – 24, <br/>Abad Bin Hanif Street, <
    <!-- end form -->
 <div class="gap60"></div>
  
-<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.895554255461!2d55.473240314993475!3d25.374816730698253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f7f0eb778065%3A0x2125ec93ca0ed14e!2sABG%20Uniforms%20LLC!5e0!3m2!1sen!2sin!4v1622644785169!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3625.3970659574097!2d46.72731667509657!3d24.678873678048344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%20No-4%2C%20Al%20Yasmin%20Building%20Building%20No%20%E2%80%93%2024%2C%20Abad%20Bin%20Hanif%20Street%2C%20Al-Malaz!5e0!3m2!1sen!2sin!4v1687548278587!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
 </div> 
 
@@ -722,6 +725,35 @@ Suite No-8, Al Yasmin Building Building No – 24, <br/>Abad Bin Hanif Street, <
 	<!-- END fh5co-wrapper -->
 	
 	<!-- Javascripts -->
+
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+		function sendEmail(){
+		 
+		  Email.send({
+		   
+		  
+		  
+		SecureToken : "79f6c892-089b-4c81-8620-9618f8d5b51a",
+			  
+		  To : 'info@maqtrading.com',
+		//   To : 'shadab.jsr@gmail.com',
+	  
+		//  From : document.getElementById("email").value,
+		From : "shadab.jsr@gmail.com",
+		// From : "shadab@maq-solutions.com",
+	  
+		  Subject : "REQUEST FOR QUTATION",
+		 // Body : "NAME:"+ document.getElementById("name").value +<br/>+ "EMAIL:" +document.getElementById("email").value + "MESSAGE:"+ document.getElementById("msg").value
+		  Body : "NAME:"+ document.getElementById("firstname").value +' '+ document.getElementById("lastname").value +"<br>"+ "Company Name:" +' '+ document.getElementById("companyname").value  +"<br>"+  "Email:"+' '+ document.getElementById("email").value + "<br>"+  "Phone No.:" +' '+ document.getElementById("phone").value + "<br>"+ "SERVICES:"+' '+ document.getElementById("service").value +"<br>"+ "Message:"+ ' '+ document.getElementById("msg").value  
+		
+	  }).then(
+		message => alert("Message Send Succesully")
+	   
+	  );
+	}
+	</script>
+
 	<script src="js/jquery-2.1.4.min.js"></script>
     
     <!-- Bootstrap -->
@@ -789,63 +821,10 @@ $(document).ready(function() {
     
     
     
-        
+    
         <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script> 
         
-      <script type="text/javascript">
-         jQuery(document).ready(function($) {
-		 
-		  
-           $("#owl-demo1").owlCarousel({		
-       			slideSpeed : 300,
-        		autoPlay : true,
-        		navigation : false,
-        		pagination : true,
-        		singleItem:true,
-			
-           });
-		   
-		    $("#owl-demo2").owlCarousel({		
-         		slideSpeed : 300,
-        		autoPlay : true,
-        		navigation : false,
-        		pagination : true,
-        		singleItem:true,
-				
-           });
-		   
-		
-           $("#owl-demo3").owlCarousel({
-        		slideSpeed : 300,
-        		autoPlay : true,
-        		navigation : false,
-        		pagination : true,
-        		singleItem:true
-        	  });
-			  
-			  
-			   $("#owl-demo-donation").owlCarousel({
-        		slideSpeed : 300,
-        		autoPlay : true,
-        		navigation : false,
-        		pagination : true,
-        		singleItem:true
-        	  });
-			  
-			  
-			  
-			  	$("#owl-partner").owlCarousel({
-        		slideSpeed : 1000,
-        		autoPlay : true,
-        		navigation : true,
-        		pagination : false,
-        		singleItem:false
-        	  });
-			  
-			  
-         });	 
-		 
-      </script>
+   
       
       
       
@@ -872,10 +851,11 @@ $('#main').on('click', function(){
 });
 
 </script>
-      
+
       
 
-           
+
+
             <!-- social media -->
  
 <!-- <script src="js/jquery.contact-buttons.js"></script>

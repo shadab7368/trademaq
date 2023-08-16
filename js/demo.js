@@ -27,17 +27,13 @@ $.contactButtons({
   effect  : 'slide-on-scroll',
   buttons : {
 	  
-	// 'whatsapp':   { class: 'whatsapp',      use: true, link: 'https://api.whatsapp.com/send?phone=971556194036&text=&source=&data=', icon: 'whatsapp', title: 'connect with whatsapp' },
-    'facebook':   { class: 'facebook', use: true, link: 'https://www.facebook.com/abguniforms/', extras: 'target="_blank"' },
-    'linkedin':   { class: 'linkedin', use: true, link: 'https://www.linkedin.com/company/abg-uniforms' , extras: 'target="_blank"'  },
-   // 'google':     { class: 'gplus',    use: true, link: 'https://plus.google.com' },
+    'facebook':   { class: 'facebook', use: true, link: 'https://www.facebook.com/maqtradinguniforms/', extras: 'target="_blank"' },
+    'linkedin':   { class: 'linkedin', use: true, link: 'https://www.linkedin.com/company/maqtrading-uniforms' , extras: 'target="_blank"'  },
 
 
    
    
 
-   // 'mybutton':   { class: 'git',      use: true, link: 'http://github.com', icon: 'github', title: 'My title for the button' },
-    //'phone':      { class: 'phone separated',    use: true, link: '+000' },
-  //  'email':      { class: 'email',    use: true, link: 'test@web.com' }
+  
   }
 });
