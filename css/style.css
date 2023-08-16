@@ -1606,6 +1606,7 @@ p {
   .lead {
     font-size: 21px;
   }
+  
 }
 
 small,
@@ -1976,6 +1977,10 @@ pre code {
 @media (min-width: 768px) {
   .container {
     width: 760px;
+  }
+  .copyright{
+
+font-size: 5px;
   }
 }
 @media (min-width: 992px) {
@@ -9686,9 +9691,9 @@ img.size{width:100% !important; height:auto !important;}
 .BoxCorner-contact2 {
 
 
-    padding:15px !important;
+    padding:20px !important;
     width:100% !important;
-   height:750px !important;
+   height:800px !important;
 	border:1px solid #000000;
 
 	/* text-align:center; */
