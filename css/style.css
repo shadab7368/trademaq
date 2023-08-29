@@ -8358,6 +8358,7 @@ div.cs-select span {
 .feature-full-1col .image .descrip p {
   margin: 0;
   color: #fff;
+  
 }
 .feature-full-1col .image .descrip small, .feature-full-1col .image .descrip span {
   display: block;
@@ -8446,7 +8447,7 @@ div.cs-select span {
 .feature-full-2col .f-hotel .image {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   position: absolute;
   top: 0;
   right: 0;
