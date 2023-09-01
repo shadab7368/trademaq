@@ -8336,7 +8336,8 @@ div.cs-select span {
     width: 100%;
   }
 }
-.feature-full-1col .image {
+.feature-full-1col 
+ {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8344,13 +8345,29 @@ div.cs-select span {
   overflow: hidden;
 }
 .feature-full-1col .image .descrip {
-  width: 180px;
+  width: 100%;
+ 
   position: absolute;
   top: 0;
-  right: -180px;
-  padding: 10px;
-  /* background: #ed1c24 !important; */
-  background: #091e3e  !important;
+  right: 20px;
+  padding: 3px;
+  background: #ed1c24 !important;
+  background: #091e3e  !important;  
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.image img {
+  width: 100%;
+ 
+  position: absolute;
+  top: 0;
+  right: 0px;
+
+  padding: 0px;
+  background: #ed1c24 !important;
+  background: #091e3e  !important;  
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
